@@ -1,5 +1,5 @@
 import React from 'react';
-import { Meta, Story } from '@storybook/react';
+import { Meta, StoryFn } from '@storybook/react';
 import { FeatureCard, FeatureCardProps } from '../components/FeatureCard';
 
 export default {
@@ -7,7 +7,7 @@ export default {
   component: FeatureCard,
 } as Meta;
 
-const Template: Story<FeatureCardProps> = (args) => <FeatureCard {...args} />;
+const Template: StoryFn<FeatureCardProps> = (args) => <FeatureCard {...args} />;
 
 export const Default = Template.bind({});
 Default.args = {
